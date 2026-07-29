@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Shop</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+<script src="../js/App.js" defer></script>
+</head>
+
+<body>
+
+<!-- HOME -->
+<section class="container" id="home">
+
+    <div class="fronttop">
+        <div class="circle"></div>
+
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#menu-section">Menu</a>
+            <a href="#about">About</a>
+            <a href="contact.html">Contact</a>
+
+            <div class="cart-icon">
+                🛒 <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1>Every day feels like Coffee Day</h1>
+
+        <p>
+            Enjoy the perfect blend of quality and flavor in every cup.
+            A warm coffee to start your day, refresh your mind,
+            and make every moment better.
+        </p>
+
+        <div class="btn">
+            <button onclick="location.href='#menu-section'">Start Your Order</button>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="social">
+            <a href="https://facebook.com/" target="_blank"><div class="fb"></div></a>
+            <a href="https://instagram.com/" target="_blank"><div class="ig"></div></a>
+            <a href="https://twitter.com/" target="_blank"><div class="tw"></div></a>
+            <a href="https://telegram.org/" target="_blank"><div class="tele"></div></a>
+        </div>
+    </div>
+
+</section>
+
+<div class="design2"></div>
+
+<!-- MENU -->
+<section id="menu-section" class="page2">
+
+    <div class="menu-title">Menu</div>
+
+    <div class="cards">
+
+        <div class="menu-item">
+            <div class="card1">Velvet Mocha Latte</div>
+            <div class="qty-box">
+                <button class="qty-btn">-</button>
+                <span class="qty">1</span>
+                <button class="qty-btn">+</button>
+            </div>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <div class="card2">Classic Espresso Brew</div>
+            <div class="qty-box">
+                <button class="qty-btn">-</button>
+                <span class="qty">1</span>
+                <button class="qty-btn">+</button>
+            </div>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <div class="card3">Caramel Iced Latte Float</div>
+            <div class="qty-box">
+                <button class="qty-btn">-</button>
+                <span class="qty">1</span>
+                <button class="qty-btn">+</button>
+            </div>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <div class="card4">Brown Sugar Cookie Iced Coffee</div>
+            <div class="qty-box">
+                <button class="qty-btn">-</button>
+                <span class="qty">1</span>
+                <button class="qty-btn">+</button>
+            </div>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <div class="card5">Midnight Black Coffee Roast</div>
+            <div class="qty-box">
+                <button class="qty-btn">-</button>
+                <span class="qty">1</span>
+                <button class="qty-btn">+</button>
+            </div>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <div class="card6">Hazelnut Cream Iced Latte</div>
+            <div class="qty-box">
+                <button class="qty-btn">-</button>
+                <span class="qty">1</span>
+                <button class="qty-btn">+</button>
+            </div>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <div class="card7">Signature Cappuccino Bliss</div>
+            <div class="qty-box">
+                <button class="qty-btn">-</button>
+                <span class="qty">1</span>
+                <button class="qty-btn">+</button>
+            </div>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <div class="card8">Vanilla Cloud Latte</div>
+            <div class="qty-box">
+                <button class="qty-btn">-</button>
+                <span class="qty">1</span>
+                <button class="qty-btn">+</button>
+            </div>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+
+    <div class="about-title">
+        <h1>About Us</h1>
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-image"></div>
+
+        <div class="about-text">
+            <p>
+                Our journey began with a simple mission: to create a welcoming space where coffee lovers can come together and enjoy high-quality brews. 
+                We source our beans from the finest coffee-growing regions around the world, ensuring that every sip delivers rich flavor and aroma. 
+                Whether you're looking for a classic espresso or a unique seasonal blend, we have something to satisfy every palate. 
+                Join us at Coffee House and experience the art of coffee like never before.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- RATINGS -->
+    <div class="ratings">
+
+        <div class="box">
+            <h2>4.9</h2>
+            <span>Customer Rating</span>
+        </div>
+
+        <div class="box">
+            <h2>1,200+</h2>
+            <span>Orders</span>
+        </div>
+
+        <div class="box">
+            <h2>500+</h2>
+            <span>Happy Customers</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CART -->
+<div class="cart-panel" id="cartPanel">
+
+    <div class="cart-header">
+        <h2>🛒 Your Cart</h2>
+        <span class="close-cart" id="closeCart">✖</span>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+        <p id="cartTotal">Total Items: 0</p>
+        <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+    </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+    <div class="checkout-modal" id="checkoutModal">
+
+        <div class="checkout-box">
+
+            <h2>Checkout Details</h2>
+            <input type="text" id="customerName" placeholder="Enter your name">
+            <input type="text" id="customerLocation" placeholder="Enter your location">
+            <input type="tel" id="customerPhone" placeholder="Enter your phone number" inputmode="numeric" pattern="[0-9]*">
+
+            <button id="confirmCheckout">Confirm Order</button>
+            <button id="closeCheckout">Cancel</button>
+
+        </div>
+
+    </div>
+<!-- POPUP -->
+    <div id="popup" class="popup">
+        <p>Thank you for your order!</p>
+    </div>
+
+</body>
+</html>
